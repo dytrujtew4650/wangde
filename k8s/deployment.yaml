@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sunf
+  name: serb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sunf
+      app: serb
   template:
     metadata:
       labels:
-        app: sunf
+        app: serb
     spec:
       containers:
-      - image: okteto.dev/sunf:latest
-        name: sunf
+      - image: okteto.dev/serb:latest
+        name: serb
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "731792e2-3a45-46f3-ac81-2726ab7d6cde"
+          value: "7a646dfd-4a7e-465e-8b17-0a0d1b6d9899"
         - name: Vless_Path
-          value: "/dfhyt30RY"
+          value: "/dfhfgSFHFG"
         - name: Vmess_UUID
-          value: "731792e2-3a45-46f3-ac81-2726ab7d6cde"
+          value: "7a646dfd-4a7e-465e-8b17-0a0d1b6d9899"
         - name: Vmess_Path
-          value: "/xxbdf47FD"
+          value: "/ndrerFNCHT"
         - name: Share_Path
           value: "/share233"
