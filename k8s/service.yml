@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gmoh
+  name: doou
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "gmoh"
+  - name: "doou"
     port: 8080
   selector:
-    app: gmoh
+    app: doou
