@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: wdou
+  name: wsct
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "wdou"
+  - name: "wsct"
     port: 8080
   selector:
-    app: wdou
+    app: wsct
