@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: four
+  name: wood
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: four
+      app: wood
   template:
     metadata:
       labels:
-        app: four
+        app: wood
     spec:
       containers:
-      - image: okteto.dev/four:latest
-        name: four
+      - image: okteto.dev/wood:latest
+        name: wood
         ports:
         - containerPort: 8080
         env:
