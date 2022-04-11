@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "135608e1-ea6f-46fd-9613-dd8ebc0ff593"
+          value: "cb4ca31e-fcf4-4202-bef4-b64319104785"
         - name: Vless_Path
-          value: "/DHRT457"
+          value: "/dfhf640"
         - name: Vmess_UUID
-          value: "135608e1-ea6f-46fd-9613-dd8ebc0ff593"
+          value: "cb4ca31e-fcf4-4202-bef4-b64319104785"
         - name: Vmess_Path
-          value: "/CBDRHT067"
+          value: "/dhrtETR"
         - name: Share_Path
           value: "/share233"
