@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gmoh
+  name: doou
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gmoh
+      app: doou
   template:
     metadata:
       labels:
-        app: gmoh
+        app: doou
     spec:
       containers:
-      - image: okteto.dev/gmoh:latest
-        name: gmoh
+      - image: okteto.dev/doou:latest
+        name: doou
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "20280653-ab9f-4c99-8fbd-79b207b70274"
+          value: "233e5480-f348-42df-9b70-5f524db182ca"
         - name: Vless_Path
-          value: "/sddgERY"
+          value: "/dgfE70RY"
         - name: Vmess_UUID
-          value: "20280653-ab9f-4c99-8fbd-79b207b70274"
+          value: "233e5480-f348-42df-9b70-5f524db182ca"
         - name: Vmess_Path
-          value: "/xcbdDGFD"
+          value: "/xbdDG5FD"
         - name: Share_Path
           value: "/share233"
