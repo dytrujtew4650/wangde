@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sougd
+  name: sunf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sougd
+      app: sunf
   template:
     metadata:
       labels:
-        app: sougd
+        app: sunf
     spec:
       containers:
-      - image: okteto.dev/sougd:latest
-        name: sougd
+      - image: okteto.dev/sunf:latest
+        name: sunf
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "a84a6842-0380-4b50-9f81-78a0cbd04589"
+          value: "731792e2-3a45-46f3-ac81-2726ab7d6cde"
         - name: Vless_Path
-          value: "/dgfE70RY"
+          value: "/dfhyt30RY"
         - name: Vmess_UUID
-          value: "a84a6842-0380-4b50-9f81-78a0cbd04589"
+          value: "731792e2-3a45-46f3-ac81-2726ab7d6cde"
         - name: Vmess_Path
-          value: "/xbdDG5FD"
+          value: "/xxbdf47FD"
         - name: Share_Path
           value: "/share233"
