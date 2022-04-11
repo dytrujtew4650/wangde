@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sdou
+  name: sougd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sdou
+      app: sougd
   template:
     metadata:
       labels:
-        app: sdou
+        app: sougd
     spec:
       containers:
-      - image: okteto.dev/sdou:latest
-        name: sdou
+      - image: okteto.dev/sougd:latest
+        name: sougd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "20280653-ab9f-4c99-8fbd-79b207b70274"
+          value: "a84a6842-0380-4b50-9f81-78a0cbd04589"
         - name: Vless_Path
-          value: "/4679ERY"
+          value: "/dgfE70RY"
         - name: Vmess_UUID
-          value: "20280653-ab9f-4c99-8fbd-79b207b70274"
+          value: "a84a6842-0380-4b50-9f81-78a0cbd04589"
         - name: Vmess_Path
-          value: "/06845dDGFD"
+          value: "/xbdDG5FD"
         - name: Share_Path
           value: "/share233"
