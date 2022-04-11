@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sunf
+  name: serb
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "sunf"
+  - name: "serb"
     port: 8080
   selector:
-    app: sunf
+    app: serb
