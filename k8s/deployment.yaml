@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: doyf
+  name: doer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: doyf
+      app: doer
   template:
     metadata:
       labels:
-        app: doyf
+        app: doer
     spec:
       containers:
-      - image: okteto.dev/doyf:latest
-        name: doyf
+      - image: okteto.dev/doer:latest
+        name: doer
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "9f644119-197c-4374-a56d-17c4bff93b05"
+          value: "c656a047-3a13-4940-9271-d45b73e35365"
         - name: Vless_Path
-          value: "/dfhyt30RY"
+          value: "/dfhfgg37RY"
         - name: Vmess_UUID
-          value: "9f644119-197c-4374-a56d-17c4bff93b05"
+          value: "c656a047-3a13-4940-9271-d45b73e35365"
         - name: Vmess_Path
-          value: "/xxbdf47FD"
+          value: "/ndrerh96FD"
         - name: Share_Path
           value: "/share233"
