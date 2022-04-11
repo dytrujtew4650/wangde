@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wtou
+  name: wegd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wtou
+      app: wegd
   template:
     metadata:
       labels:
-        app: wtou
+        app: wegd
     spec:
       containers:
-      - image: okteto.dev/wtou:latest
-        name: wtou
+      - image: okteto.dev/wegd:latest
+        name: wegd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "43ce78b1-5db0-48e8-acc0-5ed30d1f048d"
+          value: "6eced298-c227-48d5-98d8-970ea4b88d4b"
         - name: Vless_Path
-          value: "/dhffgDHR"
+          value: "/DFHFJ693"
         - name: Vmess_UUID
-          value: "43ce78b1-5db0-48e8-acc0-5ed30d1f048d"
+          value: "6eced298-c227-48d5-98d8-970ea4b88d4b"
         - name: Vmess_Path
-          value: "/gerrtyCBD9"
+          value: "/dhrDRYHT"
         - name: Share_Path
           value: "/share233"
