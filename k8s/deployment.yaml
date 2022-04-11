@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: good
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: good
+  template:
+    metadata:
+      labels:
+        app: good
+    spec:
+      containers:
+      - image: okteto.dev/good:latest
+        name: good
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "icook.tw"
+        - name: Vless_UUID
+          value: "a91afa9e-5731-4805-bbce-e9ce3500f225"
+        - name: Vless_Path
+          value: "/eteERYR576"
+        - name: Vmess_UUID
+          value: "a91afa9e-5731-4805-bbce-e9ce3500f225"
+        - name: Vmess_Path
+          value: "/REW576cbn"
+        - name: Share_Path
+          value: "/share233"
