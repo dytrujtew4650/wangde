@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: houk
+  name: four
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: houk
+      app: four
   template:
     metadata:
       labels:
-        app: houk
+        app: four
     spec:
       containers:
-      - image: okteto.dev/houk:latest
-        name: houk
+      - image: okteto.dev/four:latest
+        name: four
         ports:
         - containerPort: 8080
         env:
