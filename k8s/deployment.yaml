@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wood
+  name: gert
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wood
+      app: gert
   template:
     metadata:
       labels:
-        app: wood
+        app: gert
     spec:
       containers:
-      - image: okteto.dev/wood:latest
-        name: wood
+      - image: okteto.dev/gert:latest
+        name: gert
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "cb4ca31e-fcf4-4202-bef4-b64319104785"
+          value: "0323a72e-e245-4ac7-a162-4ee247234644"
         - name: Vless_Path
-          value: "/dfhf640"
+          value: "/DFHFdrrb"
         - name: Vmess_UUID
-          value: "cb4ca31e-fcf4-4202-bef4-b64319104785"
+          value: "0323a72e-e245-4ac7-a162-4ee247234644"
         - name: Vmess_Path
-          value: "/dhrtETR"
+          value: "/CBFTeryr"
         - name: Share_Path
           value: "/share233"
