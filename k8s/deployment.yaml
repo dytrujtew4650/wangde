@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wsct
+  name: wtou
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wsct
+      app: wtou
   template:
     metadata:
       labels:
-        app: wsct
+        app: wtou
     spec:
       containers:
-      - image: okteto.dev/wsct:latest
-        name: wsct
+      - image: okteto.dev/wtou:latest
+        name: wtou
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "8e6e94a1-d29f-4ecf-bb91-55ec019a9216"
+          value: "43ce78b1-5db0-48e8-acc0-5ed30d1f048d"
         - name: Vless_Path
-          value: "/hsd70dfhr"
+          value: "/dhffgDHR"
         - name: Vmess_UUID
-          value: "8e6e94a1-d29f-4ecf-bb91-55ec019a9216"
+          value: "43ce78b1-5db0-48e8-acc0-5ed30d1f048d"
         - name: Vmess_Path
-          value: "/y1519xdre"
+          value: "/gerrtyCBD9"
         - name: Share_Path
           value: "/share233"
