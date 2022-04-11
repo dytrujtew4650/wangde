@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: werf
+  name: wdou
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: werf
+      app: wdou
   template:
     metadata:
       labels:
-        app: werf
+        app: wdou
     spec:
       containers:
-      - image: okteto.dev/werf:latest
-        name: werf
+      - image: okteto.dev/wdou:latest
+        name: wdou
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "d044424e-0ef3-43df-9144-149dfbb461fd"
+          value: "32494042-8064-4a49-abe3-bbe62d7967fe"
         - name: Vless_Path
-          value: "/YR576dfj"
+          value: "/dfgf54t"
         - name: Vmess_UUID
-          value: "d044424e-0ef3-43df-9144-149dfbb461fd"
+          value: "32494042-8064-4a49-abe3-bbe62d7967fe"
         - name: Vmess_Path
-          value: "/RE457nfg"
+          value: "/dghgdf57m"
         - name: Share_Path
           value: "/share233"
