@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wegd
+  name: souy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wegd
+      app: souy
   template:
     metadata:
       labels:
-        app: wegd
+        app: souy
     spec:
       containers:
-      - image: okteto.dev/wegd:latest
-        name: wegd
+      - image: okteto.dev/souy:latest
+        name: souy
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "6eced298-c227-48d5-98d8-970ea4b88d4b"
+          value: "5eb5e0f5-9d73-42f2-be84-7d9814478e8c"
         - name: Vless_Path
-          value: "/DFHFJ693"
+          value: "/weyer46DFHF"
         - name: Vmess_UUID
-          value: "6eced298-c227-48d5-98d8-970ea4b88d4b"
+          value: "5eb5e0f5-9d73-42f2-be84-7d9814478e8c"
         - name: Vmess_Path
-          value: "/dhrDRYHT"
+          value: "/hbdgdrCBFT"
         - name: Share_Path
           value: "/share233"
